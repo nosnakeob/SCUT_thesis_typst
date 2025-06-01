@@ -23,7 +23,7 @@ brew install typst
 3. 克隆仓库
 
 ```bash
-git clone xxx
+git clone https://github.com/nosnakeob/SCUT_thesis_typst.git
 ```
 
 4. 打开`scutthesis.typ`点击预览
