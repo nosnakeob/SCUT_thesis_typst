@@ -11,6 +11,14 @@
     size: font_size.小四,
   )
 
+  show figure.where(kind: image): set figure(supplement: "图")
+  show figure.where(kind: table): set figure(supplement: "表")
+  show figure.where(kind: table): set figure.caption(position: top)
+
+  show figure.caption: it => [
+    #it.supplement#context counter(heading).get().first()-#context it.counter.get().first() #it.body
+  ]
+
   doc
 }
 
@@ -57,3 +65,4 @@
 
   doc
 }
+

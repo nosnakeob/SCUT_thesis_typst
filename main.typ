@@ -1,14 +1,10 @@
 #import "style/font.typ": font, font_size
-#import "style/base.typ": base, preliminary, main_body
+#import "style/base.typ": base, main_body, preliminary
 
 #set document(
   title: "华南理工大学学位论文",
   author: "作者姓名",
 )
-
-#show figure: set figure(supplement: "图")
-
-#show figure: set figure(supplement: "表")
 
 #include "cover/master.typ"
 
