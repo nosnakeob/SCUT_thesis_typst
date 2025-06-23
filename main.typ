@@ -6,6 +6,10 @@
   author: "作者姓名",
 )
 
+#show figure: set figure(supplement: "图")
+
+#show figure: set figure(supplement: "表")
+
 #include "cover/master.typ"
 
 #show: base
@@ -20,3 +24,5 @@
 #include "chapters/chapter1.typ"
 
 #include "chapters/chapter2.typ"
+
+#include "chapters/chapter3.typ"
