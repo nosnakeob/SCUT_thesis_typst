@@ -1,15 +1,17 @@
-#import "@preview/kouhu:0.2.0": kouhu
-#import "../style/font.typ": font_size, font
+#import "@preview/zh-kit:0.1.0": *
+#import "../style/font.typ": font, font_size
 
 #show heading: set align(center)
 #show heading: set text(font_size.小二, font: font.黑体)
+
+#set par(first-line-indent: (amount: 2em, all: true))
 
 // 小2号黑体
 = 摘#h(1em)要
 
 #v(1em)
 
-#kouhu(length: 100)
+#zhlorem(300)
 
 #v(1em)
 
