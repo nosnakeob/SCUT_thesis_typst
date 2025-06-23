@@ -4,8 +4,6 @@
 #show heading: set align(center)
 #show heading: set text(font_size.小二, font: font.黑体)
 
-#set par(first-line-indent: (amount: 2em, all: true))
-
 // 小2号黑体
 = 摘#h(1em)要
 

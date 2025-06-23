@@ -4,6 +4,7 @@
   // 学位论文的页面边距上下左右各为25mm
   set page(margin: 25mm)
   counter(page).update(1)
+  set par(first-line-indent: (amount: 2em, all: true))
 
   // 正文：小四号宋体
   set text(
@@ -60,7 +61,7 @@
     set align(al)
     set text(f_size, font: font.黑体)
 
-    counter(heading).display(pat) + [#h(1em)] + it.body
+    block[#counter(heading).display(pat)#h(1em)#it.body]
   }
 
   doc

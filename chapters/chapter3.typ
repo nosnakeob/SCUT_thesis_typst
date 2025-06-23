@@ -5,7 +5,7 @@
 
 == 图
 
-使用如下代码放置独立成行的图片，效果如图@one_DFUAV 所示
+使用如下代码放置独立成行的图片，效果如@one_DFUAV 所示
 
 #figure(
   image("../Fig/DFUAV_f31.png"),
