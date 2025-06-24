@@ -12,12 +12,14 @@
 
 #v(4em)
 
-#let show_title(title: "论文题目") = {
-  if type(title) == str {
-    title = title.split("\n")
-  }
+#let show_title() = context {
+  let title = if document.title == none {
+    "论文题目"
+  } else {
+    document.title.text
+  }.split("\n")
 
-  // 确保标题有两行
+  // // 确保标题有两行
   title.push("")
 
   set text(font_size.二号)
@@ -33,9 +35,7 @@
   )
 }
 
-#show_title(title: "论文题目")
-// #show_title(title: "论文\n题目")
-// #show_title(title: ("论文", "题目"))
+#show_title()
 
 #set text(font_size.三号)
 
@@ -49,10 +49,18 @@
     (bottom: black + 0.5pt)
   },
   inset: 5pt,
-  justify_str("作者姓名"), [张三],
-  justify_str("学位类别"), [sdfada],
-  justify_str("指导教师"), [李四],
-  "", "",
+  justify_str("作者姓名"),
+  context {
+    if document.author.len() == 0 {
+      "先辈"
+    } else {
+      document.author.first()
+    }
+  },
+
+  justify_str("学位类别"), "sdfada",
+  justify_str("指导教师"), "李四",
+  "", "王五",
   justify_str("所在学院"), "某学院",
-  justify_str("论文提交日期"), "114年514月",
+  justify_str("论文提交日期"), "114年5月14日",
 )

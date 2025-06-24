@@ -3,7 +3,7 @@
 
 #set document(
   title: "华南理工大学学位论文",
-  author: "作者姓名",
+  author: "张三",
 )
 
 #include "cover/master.typ"
