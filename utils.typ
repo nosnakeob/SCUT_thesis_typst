@@ -14,3 +14,8 @@
   let chars = text.trim().split("").slice(1, -1)
   chars.join([#h(1fr)])
 }
+
+// 空行
+#let empty_line(cnt, size) = {
+  text(size, v(1em * cnt))
+}

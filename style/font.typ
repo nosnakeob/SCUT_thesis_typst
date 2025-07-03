@@ -30,7 +30,6 @@
     "Songti SC",
     "STSongti",
   ),
-
   // 黑体，属于「无衬线字体」，一般可以等同于英文中的 Sans Serif Font
   // 这一行分别是「Arial（无衬线英文字体）」、「思源黑体（简体）」、「思源黑体」、「黑体（Windows）」、「黑体（MacOS）」
   黑体: (
@@ -42,7 +41,6 @@
     "Heiti SC",
     "STHeiti",
   ),
-
   // 楷体
   楷体: (
     (name: "Times New Roman", covers: "latin-in-cjk"),
@@ -52,7 +50,6 @@
     "FZKai-Z03S",
     "Noto Serif CJK SC",
   ),
-
   // 仿宋
   仿宋: (
     (name: "Times New Roman", covers: "latin-in-cjk"),
@@ -62,7 +59,6 @@
     "FZFangSong-Z02S",
     "Noto Serif CJK SC",
   ),
-
   // 等宽字体，用于代码块环境，一般可以等同于英文中的 Monospaced Font
   // 这一行分别是「Courier New（Windows 等宽英文字体）」、「思源等宽黑体（简体）」、「思源等宽黑体」、「黑体（Windows）」、「黑体（MacOS）」
   等宽: (
@@ -75,5 +71,9 @@
     "SimHei",
     "Heiti SC",
     "STHeiti",
+  ),
+  中黑英宋: (
+    (name: "Times New Roman", covers: "latin-in-cjk"),
+    "Source Han Sans HW SC",
   ),
 )

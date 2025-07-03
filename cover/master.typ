@@ -1,16 +1,16 @@
 #import "../style/font.typ": font, font_size
-#import "../utils.typ": justify_str
+#import "../utils.typ": *
 
 #set align(center)
-#set text(font: font.黑体)
+#set text(font: font.中黑英宋)
 
-#v(3em)
+#empty_line(3, font_size.四号)
 // 官方学校标识 https://www.scut.edu.cn/new/9017/list.htm
 #image("logo.jpg", width: 12cm)
 
 #text(font_size.小初)[专业学位硕士学位论文]
 
-#v(4em)
+#empty_line(4, font_size.四号)
 
 #let show_title() = context {
   let title = if document.title == none {
@@ -39,7 +39,21 @@
 
 #set text(font_size.三号)
 
-#v(5em)
+#empty_line(5, font_size.四号)
+#empty_line(1, font_size.三号)
+
+#let info = (
+  author: context if document.author.len() == 0 {
+    "先辈"
+  } else {
+    document.author.first()
+  },
+  degree: "博士",
+  supervisor: "李四",
+  external_supervisor: "王五",
+  college: "某学院",
+  date: "114年5月14日",
+)
 
 #grid(
   columns: (4.57cm, 6.85cm),
@@ -49,18 +63,18 @@
     (bottom: black + 0.5pt)
   },
   inset: 5pt,
-  justify_str("作者姓名"),
-  context {
-    if document.author.len() == 0 {
-      "先辈"
-    } else {
-      document.author.first()
-    }
-  },
-
-  justify_str("学位类别"), "sdfada",
-  justify_str("指导教师"), "李四",
-  "", "王五",
-  justify_str("所在学院"), "某学院",
-  justify_str("论文提交日期"), "114年5月14日",
+  justify_str("作者姓名"), info.author,
+  justify_str("学位类别"), info.degree,
+  justify_str("指导教师"), info.supervisor,
+  "", info.external_supervisor,
+  justify_str("所在学院"), info.college,
+  justify_str("论文提交日期"), info.date,
 )
+
+#pagebreak()
+
+#include "approval.typ"
+
+#pagebreak()
+
+#include "originality_copyright.typ"

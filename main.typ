@@ -2,7 +2,7 @@
 #import "style/base.typ": base, main_body, preliminary
 
 #set document(
-  title: "华南理工大学学位论文",
+  title: "华南理工大学学位论文标题",
   author: "张三",
 )
 
