@@ -70,11 +70,3 @@
   justify_str("所在学院"), info.college,
   justify_str("论文提交日期"), info.date,
 )
-
-#pagebreak()
-
-#include "approval.typ"
-
-#pagebreak()
-
-#include "originality_copyright.typ"

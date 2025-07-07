@@ -7,7 +7,9 @@ man! latex太慢了，后期改论文改几个字编译要等半天，后面才�
 
 ## 快速开始
 
-1. 安装 Typst
+1. 安装字体`Language Specific OTFs Simplified Chinese (简体中文)` [思源黑体](https://github.com/adobe-fonts/source-han-sans/releases)
+
+2. 安装 Typst
 ```bash
 # Windows
 winget install Typst.Typst 
@@ -18,20 +20,20 @@ brew install typst
 # 其他安装方式见 https://github.com/typst/typst
 ```
 
-2. vscode 安装 `Tinymist Typst` 插件
+3. vscode 安装 `Tinymist Typst` 插件
 
-3. 克隆仓库
+4. 克隆仓库
 
 ```bash
 git clone https://github.com/nosnakeob/SCUT_thesis_typst.git
 ```
 
-4. 打开`scutthesis.typ`点击预览
+4. 打开`main.typ`点击预览
 
 
 ## 目录结构
 
-*   `scutthesis.typ`: 主文件，包含文档的整体结构。
+*   `main.typ`: 主文件，包含文档的整体结构。
 *   `chapters/`: 存放各个章节的内容文件（例如 `abstract.typ`, `chapter01.typ`  等）。
 *   `biblibrary/`: 存放参考文献 `.bib` 文件。
 *   `Fig/`: 存放论文中使用的图片文件。

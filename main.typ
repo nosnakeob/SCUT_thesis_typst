@@ -6,9 +6,18 @@
   author: "张三",
 )
 
+#show: base
+
 #include "cover/master.typ"
 
-#show: base
+#pagebreak()
+
+#include "cover/approval.typ"
+
+#pagebreak()
+
+#include "cover/originality_copyright.typ"
+
 #show: preliminary
 
 #include "chapters/abstract.typ"

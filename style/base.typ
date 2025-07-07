@@ -6,12 +6,6 @@
   counter(page).update(1)
   set par(first-line-indent: (amount: 2em, all: true))
 
-  // 正文：小四号宋体
-  set text(
-    font: font.宋体,
-    size: font_size.小四,
-  )
-
   show figure.where(kind: image): set figure(supplement: "图")
   show figure.where(kind: table): set figure(supplement: "表")
   show figure.where(kind: table): set figure.caption(position: top)
@@ -24,6 +18,7 @@
 }
 
 #let preliminary(doc) = {
+  counter(page).update(0)
   set page(numbering: "I")
 
   doc
@@ -35,6 +30,11 @@
   counter(page).update(1)
   counter(heading).update(0)
 
+  // 正文：小四号宋体
+  set text(
+    font: font.宋体,
+    size: font_size.小四,
+  )
   set heading(numbering: "1.1")
 
   show heading: it => {
@@ -66,4 +66,3 @@
 
   doc
 }
-

@@ -5,7 +5,7 @@
 #set par(first-line-indent: (amount: 2em, all: true))
 #show heading: set align(center)
 
-= 华南理工大学\ 学位论文原创性声明
+= 华南理工大学 #parbreak() 学位论文原创性声明
 
 #empty_line(1, font_size.四号)
 
