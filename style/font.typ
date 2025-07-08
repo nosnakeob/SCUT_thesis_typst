@@ -23,10 +23,10 @@
   // 这一行分别是「新罗马体（有衬线英文字体）」、「思源宋体（简体）」、「思源宋体」、「宋体（Windows）」、「宋体（MacOS）」
   宋体: (
     (name: "Times New Roman", covers: "latin-in-cjk"),
+    "SimSun",
     "Source Han Serif SC",
     "Source Han Serif",
     "Noto Serif CJK SC",
-    "SimSun",
     "Songti SC",
     "STSongti",
   ),
@@ -34,10 +34,10 @@
   // 这一行分别是「Arial（无衬线英文字体）」、「思源黑体（简体）」、「思源黑体」、「黑体（Windows）」、「黑体（MacOS）」
   黑体: (
     (name: "Arial", covers: "latin-in-cjk"),
+    "SimHei",
     "Source Han Sans HW SC",
     "Source Han Sans",
     "Noto Sans CJK SC",
-    "SimHei",
     "Heiti SC",
     "STHeiti",
   ),
@@ -74,6 +74,6 @@
   ),
   中黑英宋: (
     (name: "Times New Roman", covers: "latin-in-cjk"),
-    "Source Han Sans HW SC",
+    "SimHei",
   ),
 )

@@ -1,4 +1,5 @@
-#import "font.typ": font, font_size
+#import "font.typ": *
+#import "@preview/cuti:0.3.0": show-cn-fakebold
 
 #let base(doc) = {
   // 学位论文的页面边距上下左右各为25mm
@@ -12,6 +13,9 @@
   show figure.caption: it => [
     #it.supplement#context counter(heading).get().first()-#context it.counter.get().first() #it.body
   ]
+
+  // 实现中文假粗体
+  show: show-cn-fakebold
 
   doc
 }

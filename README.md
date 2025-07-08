@@ -7,9 +7,7 @@ man! latex太慢了，后期改论文改几个字编译要等半天，后面才�
 
 ## 快速开始
 
-1. 安装字体`Language Specific OTFs Simplified Chinese (简体中文)` [思源黑体](https://github.com/adobe-fonts/source-han-sans/releases)
-
-2. 安装 Typst
+1. 安装 Typst
 ```bash
 # Windows
 winget install Typst.Typst 
@@ -20,9 +18,9 @@ brew install typst
 # 其他安装方式见 https://github.com/typst/typst
 ```
 
-3. vscode 安装 `Tinymist Typst` 插件
+2. vscode 安装 `Tinymist Typst` 插件
 
-4. 克隆仓库
+3. 克隆仓库
 
 ```bash
 git clone https://github.com/nosnakeob/SCUT_thesis_typst.git
