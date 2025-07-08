@@ -1,23 +1,22 @@
 #import "../style/font.typ": *
 #import "../utils.typ": *
 
-#set text(font_size.四号)
+#set text(font_size.四号, font: font.中黑英宋)
 
 *分类号：TP3* #h(1fr)*学校代号：10561*
 
-#align(left)[*学号：1145141919810*]
+*学#h(1em)号：1145141919810*
 
-// #text(font_size.小二)[#v(2em)]
+#empty_line(2, size: font_size.小二)
 
-#empty_line(2, font_size.小二)
-
+#set align(center)
 #text(font_size.小二)[华南理工大学硕士学位论文]
 
-#empty_line(2, font_size.五号)
+#empty_line(2, size: font_size.五号)
 
 #text(font_size.小一)[ *#context document.title* ]
 
-#empty_line(5, font_size.五号)
+#empty_line(5, size: font_size.五号)
 
 #set align(left)
 #set text(font_size.五号, font: font.宋体)

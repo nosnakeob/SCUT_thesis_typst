@@ -16,6 +16,11 @@
 }
 
 // 空行
-#let empty_line(cnt, size) = {
-  text(size, v(1em * cnt))
+#let empty_line(cnt, size: -1em) = context {
+  let s = size
+  if size == -1em {
+    s = text.size
+  }
+
+  text(v(1em * cnt), size: s)
 }

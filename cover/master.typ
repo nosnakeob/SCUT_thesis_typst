@@ -1,16 +1,16 @@
-#import "../style/font.typ": font, font_size
+#import "../style/font.typ": *
 #import "../utils.typ": *
 
 #set align(center)
 #set text(font: font.中黑英宋)
 
-#empty_line(3, font_size.四号)
+#empty_line(3, size: font_size.四号)
 // 官方学校标识 https://www.scut.edu.cn/new/9017/list.htm
 #image("logo.jpg", width: 12cm)
 
 #text(font_size.小初)[专业学位硕士学位论文]
 
-#empty_line(4, font_size.四号)
+#empty_line(4, size: font_size.四号)
 
 #let show_title() = context {
   let title = if document.title == none {
@@ -39,8 +39,8 @@
 
 #set text(font_size.三号)
 
-#empty_line(5, font_size.四号)
-#empty_line(1, font_size.三号)
+#empty_line(5, size: font_size.四号)
+#empty_line(1)
 
 #let info = (
   author: context if document.author.len() == 0 {

@@ -1,5 +1,5 @@
-#import "style/font.typ": font, font_size
-#import "style/base.typ": base, main_body, preliminary
+#import "style/font.typ": *
+#import "style/base.typ": *
 
 #set document(
   title: "华南理工大学学位论文标题",
@@ -21,6 +21,8 @@
 #show: preliminary
 
 #include "chapters/abstract.typ"
+
+#pagebreak()
 
 #outline(title: "目录")
 

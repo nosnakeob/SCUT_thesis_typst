@@ -3,13 +3,12 @@
 #let base(doc) = {
   // 学位论文的页面边距上下左右各为25mm
   set page(margin: 25mm)
-  counter(page).update(1)
-  set par(first-line-indent: (amount: 2em, all: true))
 
   show figure.where(kind: image): set figure(supplement: "图")
   show figure.where(kind: table): set figure(supplement: "表")
   show figure.where(kind: table): set figure.caption(position: top)
 
+  // 图 章节-图序号
   show figure.caption: it => [
     #it.supplement#context counter(heading).get().first()-#context it.counter.get().first() #it.body
   ]
@@ -18,6 +17,8 @@
 }
 
 #let preliminary(doc) = {
+  set par(first-line-indent: (amount: 2em, all: true))
+
   counter(page).update(0)
   set page(numbering: "I")
 
@@ -25,6 +26,8 @@
 }
 
 #let main_body(doc) = {
+  set par(first-line-indent: (amount: 2em, all: true))
+
   set page(numbering: "1")
 
   counter(page).update(1)
