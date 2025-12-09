@@ -6,34 +6,40 @@
 #show heading: set align(center)
 #show heading: set text(font_size.小二, font: font.黑体)
 
-// 小2号黑体
+// 中文摘要
 = 摘#h(1em)要
 
-#empty_line(1)
+#v(1em)
 
 #zhlorem(300)
 
-#empty_line(1)
+#v(1em)
 
+// 关键词
 #grid(
-  columns: 2,
+  columns: (auto, 1fr),
   gutter: 1em,
-  [*关键词：*], [Typst；论文模板；华南理工大学；学术写作],
+  [*关键词：*], 
+  [Typst；论文模板；华南理工大学；学术写作],
 )
 
 #pagebreak()
 
+// 英文摘要
 #show heading: set text(font: font.宋体)
 
 = Abstract
-#empty_line(1.5)
+
+#v(1.5em)
 
 #lorem(300)
 
 #v(1em)
 
+// Keywords
 #grid(
-  columns: 2,
+  columns: (auto, 1fr),
   gutter: 1em,
-  [*Keywords:*], [Typst; Thesis Template; South China University of Technology; Academic Writing],
+  [*Keywords:*], 
+  [Typst; Thesis Template; South China University of Technology; Academic Writing],
 )

@@ -5,7 +5,8 @@
 #set par(first-line-indent: (amount: 2em, all: true))
 #show heading: set align(center)
 
-= 华南理工大学 #parbreak() 学位论文原创性声明
+// 避免放到目录里
+==== 华南理工大学 #parbreak() 学位论文原创性声明
 
 #empty_line(1, size: font_size.四号)
 
@@ -13,7 +14,7 @@
 
 作者签名：                日期：    年   月   日
 
-= 学位论文版权使用授权书
+==== 学位论文版权使用授权书
 
 #empty_line(1, size: font_size.四号)
 
